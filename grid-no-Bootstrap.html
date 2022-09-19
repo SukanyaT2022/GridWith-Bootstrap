@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.container{
+  height: 600px;
+    width: 80%;
+    margin:auto;
+    background-color: pink;
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;/* left to right- no space of number and fr it create problem*/
+    grid-template-rows: 100px 360px 100px;
+    /* top to bottom-- look at the hight is 600px to make all box fit big box it have to be total 600
+    // 100+360+100+20+20 = total 600--gap top and bottom 20+20 */
+    grid-gap: 20px;
+   
+}
+.topBox{
+
+background-color: aquamarine;
+grid-column: 1/4;/* we merge all the box to be one box---
+4count from the gap of the box--ex1/4 means 3 box if 1/5 means have 5 box*/
+}
+
+.leftBox{
+    background-color: beige;
+}
+.centerBox{
+    background-color: blue;
+}
+.rightBox{
+    background-color: blueviolet;
+}
+.footerBox{
+    background-color: brown;
+    grid-column: 1/4;
+}
+
+
+
+
+</style>
+<body>
+    <div class="container"> 
+    <div class="topBox"> </div>
+
+
+
+    <div class="leftBox"> </div>
+    <div class="centerBox"> </div>
+    <div class="rightBox"> </div>
+
+
+
+    <div class="footerBox"> </div>
+</div>
+
+</body>
+</html>
